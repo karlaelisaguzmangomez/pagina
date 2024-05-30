@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+</head>
+<body>
+ 
+    <h1 style="font-family: 'Playfair Display', serif; text-align: center;">Películas</h1>
+
+    <div class="container">
+        <div class="col-md-4">
+            <div class="input-group mb-3">
+                <input type="text" id="titulo" class="form-control" placeholder="Ingresa titulo de la pelicula"  >
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" id="genero" class="form-control" placeholder="Ingresa Genero"  >
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" id="ano" class="form-control" placeholder="Año de Producción"  >
+            </div>
+            
+            <div>
+                <button class="btn btn-success" type="button" onclick="obtener()">Agregar</button>
+            </div>
+        </div>
+        <br>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-80">
+                    <img src="https://mx.web.img3.acsta.net/c_310_420/pictures/23/12/11/22/16/2176192.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Furiosa Madmax</h5>
+                        <p class="card-text">Sinopsis: Quinta entrega de la franquicia Mad Max, 
+                            iniciada en 1980. Para esta película, que también sirve como secuela de Mad Max:
+                            furia en el camino, George Miller vuelve a la dirección y Tom Hardy al protagónico.</p>
+                        <p class="card-text">Año De Producción: 2024</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-info btn-sm mr-2" onclick="eliminar()">Eliminar</button>
+                        <button class="btn btn-warning btn-sm" onclick="actualizar()">actualizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-80">
+                    <img src="https://mx.web.img3.acsta.net/c_310_420/pictures/23/11/09/17/13/0011443.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">El Planeta de los Simios: Nuevo Reino</h5>
+                        <p class="card-text">Sinopsis: Cuarta entrega de la serie de reinicio de El Planeta
+                            de los Simios que retoma la historia muchos años después de la muerte 
+                            de César y de que la humanidad quedara muriendo lentamente. </p>
+                        <p class="card-text">Año De Producción: 2024</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-info btn-sm mr-2" onclick="eliminar()">Eliminar</button>
+                        <button class="btn btn-warning btn-sm" onclick="actualizar()">actualizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-80">
+                    <img src="https://mx.web.img2.acsta.net/c_310_420/pictures/24/01/31/07/34/1403249.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarot de la muerte</h5>
+                        <p class="card-text">Sinopsis: Un grupo de amigos de la universidad comienza
+                            a morir de formas relacionadas con su suerte después de que
+                            les lean el horóscopo.</p>
+                        <p class="card-text">Año De Producción:2021</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-info btn-sm mr-2" onclick="eliminar()">Eliminar</button>
+                        <button class="btn btn-warning btn-sm" onclick="actualizar()">actualizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-80">
+                    <img src="https://mx.web.img3.acsta.net/c_310_420/pictures/23/12/19/14/51/5227598.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Garfield</h5>
+                        <p class="card-text">Garfield, el gato más gordo y querido de la
+                            televisión, vuelve con una película junto a su dueño Jon y 
+                            su mejor y tonto amigo canino Odie.</p>
+                        <p class="card-text">Año De Producción: 2024</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-info btn-sm mr-2" onclick="eliminar()">Eliminar</button>
+                        <button class="btn btn-warning btn-sm" onclick="actualizar()">actualizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+
+
+       
+    </div>
+    
+    <script src="index5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+am50B1F507U2BQMrFs7Zn6xpkG4" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

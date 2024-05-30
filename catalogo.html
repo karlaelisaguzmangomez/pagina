@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <link rel="stylesheet" href="catalogo.css">
+    <title>Peliculas</title>
+</head>
+<body class="text-center">
+    <div >
+        <br><br><br>
+        <h1 style="color: rgb(240, 151, 34);">Catalogo de Peliculas</h1> <br><br><br>
+        <h3 style="color: rgb(184, 193, 219);">Buscar Peliculas</h3><br>
+        <input type="text" placeholder="titulo_pelicula">
+        <input type="submit" id="buscador" value="Buscar" onclick="buscar()"><br><br>
+        <h1 style="color: rgb(213, 224, 236);">Peliculas</h1><br><br>
+        
+        
+    </div>
+
+    <div class="container">
+        
+        <div class="card" style="width: 18rem;">
+            <img src="https://mx.web.img3.acsta.net/c_310_420/pictures/23/12/11/22/16/2176192.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="pelicula1">Furiosa: De la saga de Mad Max</h5>
+                <p class="card-text">Quinta entrega de la franquicia Mad Max, 
+                iniciada en 1980. Para esta película, que también sirve como secuela de Mad Max:
+                furia en el camino, George Miller vuelve a la dirección y Tom Hardy al protagónico.
+                </p>
+            </div>
+            <div class="card-body">
+              <button type="buttonEliminar1" class="btn btn-info w-10 fs-4 mb-6" id="btn1">Editar</button>
+              <button type="buttonEditar1" class="btn btn-info w-10 fs-4 mb-6" onclick="eliminar()">Eliminar</button> <br><br>
+              <a href="https://www.sensacine.com.mx/peliculas/pelicula-191112/" class="card-link text-danger">Encontrar en cines</a>
+            </div>
+        </div>
+        
+        <div class="card" style="width: 18rem;">
+            <img src="https://mx.web.img3.acsta.net/c_310_420/pictures/23/11/09/17/13/0011443.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">El Planeta de los Simios: Nuevo Reino</h5>
+                <p class="card-text">Cuarta entrega de la serie de reinicio de El Planeta
+                    de los Simios que retoma la historia muchos años después de la muerte 
+                    de César y de que la humanidad quedara muriendo lentamente. 
+                </p>
+            </div>
+            <div class="card-body">
+              <button type="buttonEliminar2" class="btn btn-info w-10 fs-4 mb-6" onclick="editar()">Editar</button>
+              <button type="buttonEditar2" class="btn btn-info w-10 fs-4 mb-6" onclick="eliminar()">Eliminar</button> <br><br>
+              <a href="https://www.sensacine.com.mx/peliculas/pelicula-276289/" class="card-link text-danger">Encontrar en cines</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://mx.web.img2.acsta.net/c_310_420/pictures/24/01/31/07/34/1403249.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tarot de la muerte</h5>
+                <p class="card-text">Un grupo de amigos de la universidad comienza
+                    a morir de formas relacionadas con su suerte después de que
+                    les lean el horóscopo. 
+                </p>
+            </div>
+            <div class="card-body">
+              <button type="buttonEliminar3" class="btn btn-info w-10 fs-4 mb-6" onclick="editar()">Editar</button>
+              <button type="buttonEditar3" class="btn btn-info w-10 fs-4 mb-6" onclick="eliminar()">Eliminar</button> <br><br>
+              <a href="https://www.sensacine.com.mx/peliculas/pelicula-305904/" class="card-link text-danger">Encontrar en cines</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container">
+        
+        <div class="card" style="width: 18rem;">
+            <img src="https://mx.web.img3.acsta.net/c_310_420/img/82/ad/82adfed974a1377ccc0d1091d6f8ce6d.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hachiko: Una historia verdadera</h5>
+                <p class="card-text">Un perro increíblemente leal llamado Hachiko 
+                    (Batong), espera pacientemente a su amo en la estación del 
+                    teleférico, manteniendo vivas sus esperanzas de reencontrarse con él.
+                </p>
+            </div>
+            <div class="card-body">
+              <button type="button" class="btn btn-info w-10 fs-4 mb-6" onclick="editar()">editar</button>
+              <button type="button" class="btn btn-info w-10 fs-4 mb-6" onclick="eliminar()">eliminar</button> <br><br>
+              <a href="https://www.sensacine.com.mx/peliculas/pelicula-314742/" class="card-link text-danger">Encontrar en cines</a>
+            </div>
+        </div>
+        
+        <div class="card" style="width: 18rem;">
+            <img src="https://mx.web.img3.acsta.net/c_310_420/img/47/af/47afd934a1cee3f0df25c2b54189e38e.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Good Boy</h5>
+                <p class="card-text">Cuando Sigrid conoce a Christian, un hombre guapo 
+                    y adinerado, a través de una aplicación de citas, este le revela 
+                    que tiene una singular mascota que en realidad es un hombre disfrazado
+                    y que actúa como perro. A pesar de desconcertarse, Sigrid acepta continuar
+                    con la relación con el objetivo de descubrir la oscura verdad que hay 
+                    detrás de Christian y su extraña mascota Frank.  
+                </p>
+            </div>
+            <div class="card-body">
+              <button type="button" class="btn btn-info w-10 fs-4 mb-6" onclick="editar()">Editar</button>
+              <button type="button" class="btn btn-info w-10 fs-4 mb-6" onclick="eliminar()">Eliminar</button> <br><br>
+              <a href="https://www.sensacine.com.mx/peliculas/pelicula-310295/" class="card-link text-danger">Encontrar en cines</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://mx.web.img3.acsta.net/c_310_420/pictures/23/12/19/14/51/5227598.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Garfield: Fuera de casa</h5>
+                <p class="card-text">Garfield, el gato más gordo y querido de la
+                    televisión, vuelve con una película junto a su dueño Jon y 
+                    su mejor y tonto amigo canino Odie. 
+                </p>
+            </div>
+            <div class="card-body">
+              
+              <button type="button" class="btn btn-info w-10 fs-4 mb-6" id="editarBtn" onclick="editar()">Editar</button>
+              <button type="button" class="btn btn-info w-10 fs-4 mb-6" id="eliminarBtn" onclick="eliminar()">Eliminar</button> <br><br>
+              <a href="https://www.sensacine.com.mx/peliculas/pelicula-247696/" class="card-link text-danger">Encontrar en cines</a>
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+    <script src="./index5.js"></script>
+</body>
+</html>

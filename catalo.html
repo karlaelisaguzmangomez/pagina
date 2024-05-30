@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Películas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .movie {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .movie img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .movie h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .movie p {
+            margin: 5px 0;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttons button {
+            background-color: #5f27cd;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            background-color: #341f97;
+        }
+        .add-movie {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .add-movie input, .add-movie button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Galería de Películas</h1>
+    <div class="gallery" id="gallery"></div>
+    <div class="add-movie">
+        <input type="text" id="newTitle" placeholder="Nombre de la película">
+        <input type="text" id="newDirector" placeholder="Director">
+        <input type="text" id="newGenre" placeholder="Género">
+        <input type="text" id="newImageUrl" placeholder="URL de la imagen">
+        <button id="addMovieBtn">Agregar Película</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+body {
+    background-image: url(images.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, auto); 
+    gap: 10px;
+}
